@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+
+.init {
+  /* width: 10%; */
+  padding: 1%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: auto;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: auto;
+}
+.square {
+  flex: auto;
+}
