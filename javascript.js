@@ -10,7 +10,8 @@ function createGridSquares(row, col) {
       let square = document.createElement("div");
       square.classList.add("square");
       square.addEventListener("mouseover", (event) => {
-        square.setAttribute("style", "background:black;");
+        let color = getRandomColor();
+        square.setAttribute("style", `background:${color};`);
       });
       row.appendChild(square);
     }
@@ -29,4 +30,7 @@ function initializeGrid() {
   }
 }
 
+function getRandomColor() {
+  return "#" + Math.floor(Math.random() * 16777215).toString(16);
+}
 document.querySelector(".init").addEventListener("click", initializeGrid);
